@@ -29,11 +29,18 @@ public class custom_order {
     System.out.println("We make custom cakes with our secret cake batter!");
 	 
     // Introduce shop and prompt user to input first name
-      
+    int totalCost;
+    String addOnList;  
     // Introduce shop and prompt user to input first name
-
+    static void addItem(String item, int cost) {
+      totalCost+=cost;
+      addOnList+=item;
+    }
     
-	  
+	  if (frostingType != "no"){
+      addItem(frostingType,2);
+      addOnList+=", ";
+    }
 	  
     // TEST CODE
     
